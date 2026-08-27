@@ -1,0 +1,99 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --bg-primary: #0B0B0B;
+  --bg-secondary: #151515;
+  --bg-tertiary: #1C1C1C;
+  --accent: #C9A45C;
+  --accent-hover: #E2C889;
+  --accent-dark: #8C6E2E;
+  --text-primary: #F5F1E8;
+  --text-secondary: #A8A8A8;
+  --border-color: rgba(201, 164, 92, 0.2);
+  --border-color-glow: rgba(201, 164, 92, 0.4);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-manrope), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings Typography */
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A45C;
+}
+
+/* Custom selection */
+::selection {
+  background-color: rgba(201, 164, 92, 0.3);
+  color: #F5F1E8;
+}
+
+/* Glassmorphism & Translucency */
+.glass-panel {
+  background: rgba(21, 21, 21, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+}
+
+.glass-nav {
+  background: rgba(11, 11, 11, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Subtle Gold Divider line */
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(201, 164, 92, 0.5) 50%, transparent 100%);
+}
+
+/* Shimmer / Gold Text Effect */
+.gold-text {
+  background: linear-gradient(135deg, #F5F1E8 0%, #C9A45C 50%, #E2C889 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #C9A45C 0%, #E2C889 50%, #9E7933 100%);
+}
+
+/* Motion reduction */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

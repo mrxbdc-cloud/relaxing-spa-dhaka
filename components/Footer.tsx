@@ -68,6 +68,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/spa-near-me/" className="hover:text-[#C9A45C] transition-colors font-light tracking-wider">
+                  Spa Near Me Guide
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact/" className="hover:text-[#C9A45C] transition-colors font-light tracking-wider">
                   Contact & Directions
                 </Link>

@@ -218,7 +218,7 @@ export default function LocationsHubPage() {
               Spa Near Nearby Neighborhoods
             </h2>
             <p className="text-sm text-[#A8A8A8] font-light mt-3">
-              Looking for a spa near your neighborhood? Discover travel times, route directions, and service availability to our central Banani location.
+              Looking for a <Link href="/spa-near-me/" className="text-[#C9A45C] hover:underline font-normal">spa near me in Dhaka</Link> or near your neighborhood? Discover travel times, route directions, and service availability to our central Banani location.
             </p>
           </div>
 

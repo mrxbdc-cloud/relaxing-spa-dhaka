@@ -49,6 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/locations/spa-near-vatara/`, priority: 0.85, changeFrequency: "weekly" as const },
 
     // Primary Keyword Landing Pages
+    { url: `${baseUrl}/spa-near-me/`, priority: 0.95, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/aroma-oil-massage-dhaka/`, priority: 0.9, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/body-massage-banani/`, priority: 0.9, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/body-massage-dhaka/`, priority: 0.9, changeFrequency: "weekly" as const },
